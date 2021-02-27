@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Toshiba_Optical)(type Legacy)(uri ${KIPRJMOD}/kicad-lib/Toshiba_Optical.lib)(options "")(descr ""))
+  (lib (name CUI_RCJ)(type Legacy)(uri ${KIPRJMOD}/kicad-lib/CUI_RCJ.lib)(options "")(descr ""))
+)

@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name Cliff_Electronic_Optical)(type KiCad)(uri ${KIPRJMOD}/kicad-lib/Cliff_Electronic_Optical.pretty)(options "")(descr ""))
+  (lib (name CUI_RCJ)(type KiCad)(uri ${KIPRJMOD}/kicad-lib/CUI_RCJ.pretty)(options "")(descr ""))
+  (lib (name PMOD)(type KiCad)(uri ${KIPRJMOD}/kicad-lib/PMOD.pretty)(options "")(descr ""))
+)

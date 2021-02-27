@@ -1,0 +1,325 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 7284 5315
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R1
+U 1 1 5FE704D2
+P 4400 2550
+F 0 "R1" V 4193 2550 50  0000 C CNN
+F 1 "210R" V 4284 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4330 2550 50  0001 C CNN
+F 3 "~" H 4400 2550 50  0001 C CNN
+	1    4400 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FE71303
+P 4650 2800
+F 0 "R2" H 4580 2754 50  0000 R CNN
+F 1 "110R" H 4580 2845 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4580 2800 50  0001 C CNN
+F 3 "~" H 4650 2800 50  0001 C CNN
+	1    4650 2800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4550 2550 4650 2550
+$Comp
+L Device:C C1
+U 1 1 5FE743A6
+P 4900 2550
+F 0 "C1" V 5152 2550 50  0000 C CNN
+F 1 "100nF" V 5061 2550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4938 2400 50  0001 C CNN
+F 3 "~" H 4900 2550 50  0001 C CNN
+	1    4900 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4650 2650 4650 2550
+Connection ~ 4650 2550
+Wire Wire Line
+	4650 2550 4750 2550
+$Comp
+L power:GND #PWR0103
+U 1 1 5FE75EE3
+P 4650 2950
+F 0 "#PWR0103" H 4650 2700 50  0001 C CNN
+F 1 "GND" H 4655 2777 50  0000 C CNN
+F 2 "" H 4650 2950 50  0001 C CNN
+F 3 "" H 4650 2950 50  0001 C CNN
+	1    4650 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5FE7B593
+P 5200 2950
+F 0 "#PWR0104" H 5200 2700 50  0001 C CNN
+F 1 "GND" H 5205 2777 50  0000 C CNN
+F 2 "" H 5200 2950 50  0001 C CNN
+F 3 "" H 5200 2950 50  0001 C CNN
+	1    5200 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male J1
+U 1 1 5FE5FBF7
+P 1350 2600
+F 0 "J1" H 1450 3050 50  0000 C CNN
+F 1 "PMOD" H 1450 2950 50  0000 C CNN
+F 2 "PMOD:PinHeader_1x06_P2.54mm_Horizontal" H 1350 2600 50  0001 C CNN
+F 3 "~" H 1350 2600 50  0001 C CNN
+	1    1350 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5FE72F42
+P 3800 2950
+F 0 "#PWR0107" H 3800 2700 50  0001 C CNN
+F 1 "GND" H 3805 2777 50  0000 C CNN
+F 2 "" H 3800 2950 50  0001 C CNN
+F 3 "" H 3800 2950 50  0001 C CNN
+	1    3800 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CUI_RCJ:RCJ-02x J2
+U 1 1 5FE78B1A
+P 5550 2650
+F 0 "J2" H 5550 2350 50  0000 R CNN
+F 1 "COAX_OUT" H 5700 2450 50  0000 R CNN
+F 2 "CUI_RCJ:RCJ-02x" H 5550 2650 50  0001 C CNN
+F 3 "" H 5550 2650 50  0001 C CNN
+	1    5550 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L 74xGxx:74LVC1G34 U1
+U 1 1 5FE821ED
+P 3800 2550
+F 0 "U1" H 3500 2850 50  0000 C CNN
+F 1 "74LVC1G34" H 3500 2750 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5_Handsoldering" H 3800 2550 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/74LVC1G34.pdf" H 3800 2550 50  0001 C CNN
+	1    3800 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 5FE8ABBD
+P 3800 2200
+F 0 "#PWR0102" H 3800 2050 50  0001 C CNN
+F 1 "+3.3V" H 3815 2373 50  0000 C CNN
+F 2 "" H 3800 2200 50  0001 C CNN
+F 3 "" H 3800 2200 50  0001 C CNN
+	1    3800 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5FEA03CA
+P 1750 2900
+F 0 "#PWR0106" H 1750 2650 50  0001 C CNN
+F 1 "GND" H 1755 2727 50  0000 C CNN
+F 2 "" H 1750 2900 50  0001 C CNN
+F 3 "" H 1750 2900 50  0001 C CNN
+	1    1750 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 2550 4250 2550
+$Comp
+L Device:C C2
+U 1 1 5FE720F4
+P 4150 2750
+F 0 "C2" H 4250 2750 50  0000 L CNN
+F 1 "100nF" H 4250 2650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4188 2600 50  0001 C CNN
+F 3 "~" H 4150 2750 50  0001 C CNN
+	1    4150 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 2650 3800 2900
+$Comp
+L Toshiba_Optical:TOTX179 U2
+U 1 1 5FED4293
+P 4800 1100
+F 0 "U2" H 4750 1500 50  0000 L CNN
+F 1 "OPTICAL_OUT" H 4550 1400 50  0000 L CNN
+F 2 "Cliff_Electronic_Optical:FCR684208T" H 4950 1100 50  0001 C CNN
+F 3 "" H 4950 1100 50  0001 C CNN
+	1    4800 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5FED4C1C
+P 4250 1300
+F 0 "C3" H 3950 1350 50  0000 L CNN
+F 1 "100nF" H 3900 1250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4288 1150 50  0001 C CNN
+F 3 "~" H 4250 1300 50  0001 C CNN
+	1    4250 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0101
+U 1 1 5FED6AF2
+P 4250 900
+F 0 "#PWR0101" H 4250 750 50  0001 C CNN
+F 1 "+3.3V" H 4265 1073 50  0000 C CNN
+F 2 "" H 4250 900 50  0001 C CNN
+F 3 "" H 4250 900 50  0001 C CNN
+	1    4250 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5FED762F
+P 4250 1550
+F 0 "#PWR0108" H 4250 1300 50  0001 C CNN
+F 1 "GND" H 4255 1377 50  0000 C CNN
+F 2 "" H 4250 1550 50  0001 C CNN
+F 3 "" H 4250 1550 50  0001 C CNN
+	1    4250 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2550 5250 2550
+$Comp
+L power:+3.3V #PWR0105
+U 1 1 5FE83A1A
+P 1650 2250
+F 0 "#PWR0105" H 1650 2100 50  0001 C CNN
+F 1 "+3.3V" H 1665 2423 50  0000 C CNN
+F 2 "" H 1650 2250 50  0001 C CNN
+F 3 "" H 1650 2250 50  0001 C CNN
+	1    1650 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2900 1650 2900
+Wire Wire Line
+	1650 2900 1650 2350
+Wire Wire Line
+	1550 2800 1750 2800
+Wire Wire Line
+	1750 2800 1750 2900
+Wire Wire Line
+	1550 2700 1800 2700
+Wire Wire Line
+	1800 2600 1550 2600
+Wire Wire Line
+	5200 2950 5200 2850
+Wire Wire Line
+	5200 2850 5250 2850
+Wire Wire Line
+	5250 2750 5200 2750
+Wire Wire Line
+	5200 2750 5200 2850
+Connection ~ 5200 2850
+Wire Wire Line
+	4150 2900 3800 2900
+Connection ~ 3800 2900
+Wire Wire Line
+	3800 2900 3800 2950
+Wire Wire Line
+	3800 2450 3800 2300
+Wire Wire Line
+	3800 2300 4150 2300
+Wire Wire Line
+	4150 2300 4150 2600
+Connection ~ 3800 2300
+Wire Wire Line
+	3800 2300 3800 2200
+Wire Wire Line
+	4250 900  4250 1000
+Wire Wire Line
+	4450 1000 4250 1000
+Connection ~ 4250 1000
+Wire Wire Line
+	4250 1000 4250 1150
+Wire Wire Line
+	4450 1100 4000 1100
+Text Label 1800 2700 0    50   ~ 0
+COAX
+Text Label 1800 2600 0    50   ~ 0
+OPTICAL
+NoConn ~ 1550 2400
+NoConn ~ 1550 2500
+Wire Wire Line
+	3150 2550 3500 2550
+Text Label 3150 2550 2    50   ~ 0
+COAX
+Text Label 4000 1100 2    50   ~ 0
+OPTICAL
+Wire Wire Line
+	4250 1550 4250 1500
+Wire Wire Line
+	4250 1500 4450 1500
+Wire Wire Line
+	4450 1500 4450 1200
+Connection ~ 4250 1500
+Wire Wire Line
+	4250 1500 4250 1450
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 6037D47A
+P 2100 2250
+F 0 "#FLG0101" H 2100 2325 50  0001 C CNN
+F 1 "PWR_FLAG" H 2100 2423 50  0000 C CNN
+F 2 "" H 2100 2250 50  0001 C CNN
+F 3 "~" H 2100 2250 50  0001 C CNN
+	1    2100 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 2250 2100 2350
+Wire Wire Line
+	2100 2350 1650 2350
+Connection ~ 1650 2350
+Wire Wire Line
+	1650 2350 1650 2250
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 6037E282
+P 2100 2900
+F 0 "#FLG0102" H 2100 2975 50  0001 C CNN
+F 1 "PWR_FLAG" H 2100 3073 50  0000 C CNN
+F 2 "" H 2100 2900 50  0001 C CNN
+F 3 "~" H 2100 2900 50  0001 C CNN
+	1    2100 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2100 2900 2100 2800
+Wire Wire Line
+	2100 2800 1750 2800
+Connection ~ 1750 2800
+Text Notes 2950 4550 0    71   Italic 14
+S/PDIF PMOD
+Text Notes 3750 4700 0    50   ~ 0
+10/01/2021
+Text Notes 6150 4700 0    50   Italic 10
+v1.0.3
+Text Notes 3000 3500 0    50   ~ 0
+The official spec apparently calls for a pulse transformer on the coax output.\nThis should be good enough for most cases though.\nThe Murata DA103C could be used if one is needed.
+Text Notes 2600 4150 0    50   ~ 0
+By Dan Rodrigues\n\ngithub.com/dan-rodrigues
+$EndSCHEMATC
