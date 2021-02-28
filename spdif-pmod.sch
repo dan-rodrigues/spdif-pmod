@@ -319,7 +319,7 @@ Text Notes 3750 4700 0    50   ~ 0
 Text Notes 6150 4700 0    50   Italic 10
 v1.0.3
 Text Notes 3000 3500 0    50   ~ 0
-The official spec apparently calls for a pulse transformer on the coax output.\nThis should be good enough for most cases though.\nThe Murata DA103C could be used if one is needed.
+The official spec apparently calls for a pulse transformer on the coax output.\nThis should be good enough for most cases though.\nThe Murata DA101(J)C could be used if one is needed.
 Text Notes 2600 4150 0    50   ~ 0
 By Dan Rodrigues\n\ngithub.com/dan-rodrigues
 $EndSCHEMATC
